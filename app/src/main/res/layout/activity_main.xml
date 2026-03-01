@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите алгоритм шифрования"
+        android:textSize="20sp"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnCaesar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4128bf"
+        android:text="Шифр Цезаря"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnAES"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4128bf"
+        android:text="AES"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnDES"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4128bf"
+        android:text="DES"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnRSA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4128bf"
+        android:text="RSA"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnSHA256"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4128bf"
+        android:text="SHA-256 Хеш"/>
+
+</LinearLayout>

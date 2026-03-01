@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="SHA-256 Хеширование"
+      android:textSize="24sp"
+      android:layout_marginTop="48dp"
+      android:layout_gravity="center_horizontal"/>
+
+  <EditText
+      android:id="@+id/inputTextSHA"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:hint="Введите исходный текст"/>
+
+  <Button
+      android:id="@+id/calculateHashButtonSHA"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:backgroundTint="#4128bf"
+      android:layout_gravity="center"
+      android:layout_marginTop="8dp"
+      android:text="Вычислить Хеш"/>
+
+  <TextView
+      android:id="@+id/hashResultTextSHA"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:text="Хеш (SHA-256):"/>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="?android:attr/listDivider"
+      android:layout_marginTop="24dp"
+      android:layout_marginBottom="24dp"/>
+
+  <EditText
+      android:id="@+id/textToVerifySHA"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Введите текст для проверки"/>
+
+  <Button
+      android:id="@+id/verifyButtonSHA"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:backgroundTint="#4128bf"
+      android:layout_gravity="center"
+      android:layout_marginTop="8dp"
+      android:text="Проверить"/>
+
+  <TextView
+      android:id="@+id/verificationResultTextSHA"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:gravity="center"
+      android:textSize="20sp"
+      android:text="Результат проверки"/>
+
+  <Button
+      android:id="@+id/backButtonSHA"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:backgroundTint="#4128bf"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="120dp"
+      android:text="Назад в меню"/>
+
+</LinearLayout>

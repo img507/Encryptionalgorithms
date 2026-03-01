@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DES Шифрование"
+        android:textSize="24sp"
+        android:layout_marginTop="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/inputTextDES"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите текст"/>
+
+    <EditText
+        android:id="@+id/keyTextDES"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ключ (8 символов)"
+        android:maxLength="8"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/encryptButtonDES"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4128bf"
+            android:text="Зашифровать"/>
+
+        <Button
+            android:id="@+id/decryptButtonDES"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4128bf"
+            android:layout_marginStart="16dp"
+            android:text="Расшифровать"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/encryptedResultTextDES"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Зашифрованный текст (Base64):"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/decryptedResultTextDES"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Расшифрованный текст:"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/backButtonDES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4128bf"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:text="Назад в меню"/>
+
+</LinearLayout>
